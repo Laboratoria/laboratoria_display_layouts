@@ -1,5 +1,14 @@
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body,
+.container {
+  height: 100%;
+  min-height: 100%;
 }
 
 body {
@@ -9,63 +18,44 @@ body {
 
 .container {
   /* Definir el width es importante para que el navegador pueda calcular el margen */
-  width: 700px; 
+  /*width: 700px; */
   margin: 0 auto;
 }
 
-.logo img {
-  display: block;
-  margin: 14px auto;
-}
-
-ul.navigation {
-  padding: 14px;
-  margin: 0 auto;
-  border-top: 2px solid #000;
-  border-bottom: 1px solid #000;
-  text-align: center;
-}
-
-ul.navigation li {
-  display: inline-block;
-  font-size: 14px;
-}
-
-div.banner {
-  text-align: center;
-  padding-top: 28px;
-}
-
-div.banner img {
+header {
   width: 100%;
+  height: 140px;
+  background-color: gray;
 }
 
-/* 
-  SECCION: Nuestras coders
-*/
-#nuestras-coders {}
-
-ul.grid-coders {
-  list-style: none;
-  padding: 0;
-}
-
-.grid-coders li {
+.left-column, 
+.right-column {
   float: left;
-  width: 33.33%;
-  padding: 7px;
+  min-height: 100%;
+  position: relative;
 }
 
-.grid-coders li img {
+.left-column {
+  background-color: red;
+  width: 25%;
+}
+
+.right-column {
+  background-color: blue;
+  width: 75%;
+}
+
+.pic-box {
+  position: absolute;
   width: 100%;
-  height: auto;
+  top: -60px;
+  text-align: center;
 }
 
-.imagen-borde-circular li img {
+.pic-box img {
   border-radius: 50%;
+  width: 120px;
 }
-
-
 
 /* 
   Clases utilitarias
@@ -97,23 +87,6 @@ ul.grid-coders {
 
 .text-right {
   text-align: right;
-}
-
-/*
-  Separador
-*/
-.separador {
-  width: 210px;
-  margin: 14px 0;
-}
-
-.separador-punteado {
-  border-bottom: 3px dotted pink;
-}
-
-.separador-solido {
-  background-color: pink;
-  height: 3px;
 }
 
 
